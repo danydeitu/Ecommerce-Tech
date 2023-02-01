@@ -1,123 +1,123 @@
 [
-  {
-      "id": 1,
-      "idCategoria": 1,
-      "nombre": "Notebook",
-      "marca": "Lenovo",
-      "modelo": "Y510P",
-      "precio": 60000,
-      "stock": 30,
-      "img": "notebook-lenovo.jpg"
-  },
-  {
-      "id": 2,
-      "idCategoria": 2,
-      "nombre": "Celular",
-      "marca": "Xiomi",
-      "modelo": "Mi-9",
-      "precio": 35000,
-      "stock": 20,
-      "img": "xiaomi-mi-9.jpg"
-  },
-  {
-      "id": 3,
-      "idCategoria": 3,
-      "nombre": "Smart Tv",
-      "marca": "Novatech",
-      "modelo": "50D1U",
-      "precio": 57000,
-      "stock": 15,
-      "img": "smart-tv-novatech.jpg"
-  },
-  {
-      "id": 4,
-      "idCategoria": 4,
-      "nombre": "Camara ",
-      "marca": "iQual",
-      "modelo": "C40",
-      "precio": 8000,
-      "stock": 30,
-      "img": "camara-iqual.jpg"
-  },
-  {
-      "id": 5,
-      "idCategoria": 4,
-      "nombre": "Mouse",
-      "marca": "Logitech",
-      "modelo": "G502",
-      "precio": 1400,
-      "stock": 7,
-      "img": "mouse-logitech.jpg"
-  },
-  {
-      "id": 6,
-      "idCategoria": 4,
-      "nombre": "Auriculares",
-      "marca": "Motorola",
-      "modelo": "Pulse",
-      "precio": 4000,
-      "stock": 20,
-      "img": "motorola-pulse.jpg"
-  },
-  {
-      "id": 7,
-      "idCategoria": 2,
-      "nombre": "Celular",
-      "marca": "Apple",
-      "modelo": "Iphone X Silver",
-      "precio": 250000,
-      "stock": 10,
-      "img": "iphone-x.jpg"
-  },
-  {
-      "id": 8,
-      "idCategoria": 3,
-      "nombre": "Apple TV",
-      "marca": "Apple ",
-      "modelo": "32 Gb",
-      "precio": 45000,
-      "stock": 30,
-      "img": "apple-tv.jpg"
-  },
-  {
-      "id": 9,
-      "idCategoria": 4,
-      "nombre": "Parlante",
-      "marca": "Kalley",
-      "modelo": "SPK200",
-      "precio": 34000,
-      "stock": 21,
-      "img": "parlante-kalley.png"
-  },
-  {
-      "id": 10,
-      "idCategoria": 1,
-      "nombre": "Mac Air",
-      "marca": "Apple",
-      "modelo": "M1 2020",
-      "precio": 13000,
-      "stock": 25,
-      "img": "mac-air.jpg"
-  },
-  {
-      "id": 11,
-      "idCategoria": 2,
-      "nombre": "Celular",
-      "marca": "Samsung",
-      "modelo": "S20",
-      "precio": 85000,
-      "stock": 30,
-      "img": "samsung-s20.jpg"
-  },
-  {
-      "id": 12,
-      "idCategoria": 1,
-      "nombre": "Notebook",
-      "marca": "HP",
-      "modelo": "Pavilion 15",
-      "precio": 120000,
-      "stock": 20,
-      "img": "hp-pavilion.jpg"
-  }
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Notebook",
+        "marca": "Exo",
+        "modelo": "Smart L33E",
+        "precio": 80000,
+        "stock": 10,
+        "img": "exo.webp"
+    },
+    {
+        "id": 2,
+        "idCategoria": 1,
+        "nombre": "Notebook",
+        "marca": "Lenovo",
+        "modelo": "N5030",
+        "precio": 85000,
+        "stock": 20,
+        "img": "hp.webp"
+    },
+    {
+        "id": 3,
+        "idCategoria": 1,
+        "nombre": "Notebook",
+        "marca": "Novatech",
+        "modelo": "50D1U",
+        "precio": 57000,
+        "stock": 15,
+        "img": "hp1.webp"
+    },
+    {
+        "id": 4,
+        "idCategoria": 1,
+        "nombre": "Notebook",
+        "marca": "Asus",
+        "modelo": "X515EA",
+        "precio": 232000,
+        "stock": 30,
+        "img": "Asus.webp"
+    },
+    {
+        "id": 5,
+        "idCategoria": 2,
+        "nombre": "PC",
+        "marca": "AMD",
+        "modelo": "Rysen 7 4750g",
+        "precio": 230000,
+        "stock": 7,
+        "img": "pc-amd.webp"
+    },
+    {
+        "id": 6,
+        "idCategoria": 2,
+        "nombre": "PC",
+        "marca": "Over Tech",
+        "modelo": "Pulse",
+        "precio": 75500,
+        "stock": 10,
+        "img": "pc-over.webp"
+    },
+    {
+        "id": 7,
+        "idCategoria": 2,
+        "nombre": "PC",
+        "marca": "Intel",
+        "modelo": "I7 8700",
+        "precio": 220000,
+        "stock": 10,
+        "img": "pc-intel1.webp"
+    },
+    {
+        "id": 8,
+        "idCategoria": 2,
+        "nombre": "PC",
+        "marca": "Intel ",
+        "modelo": "I5 10400",
+        "precio": 150000,
+        "stock": 9,
+        "img": "pc-intel.webp"
+    },
+    {
+        "id": 9,
+        "idCategoria": 3,
+        "nombre": "Impresora Multifuncion",
+        "marca": "Canon",
+        "modelo": "G2160 Tinta Continua",
+        "precio": 68000,
+        "stock": 11,
+        "img": "impre-canon.webp"
+    },
+    {
+        "id": 10,
+        "idCategoria": 3,
+        "nombre": "Impresora Multifuncion",
+        "marca": "HP",
+        "modelo": "Ink Tanck Wirless 415",
+        "precio": 55200,
+        "stock": 25,
+        "img": "impre-hp.webp"
+    },
+    {
+        "id": 11,
+        "idCategoria": 4,
+        "nombre": "Monitor",
+        "marca": "Samsung",
+        "modelo": "F27T350FHL led 27 led 27",
+        "precio": 85000,
+        "stock": 6,
+        "img": "monitor-samsung.webp"
+    },
+    {
+        "id": 12,
+        "idCategoria": 4,
+        "nombre": "Monitor",
+        "marca": "Philips",
+        "modelo": "Philips 27 Curvo 271e1sca",
+        "precio": 120000,
+        "stock": 20,
+        "img": "monitor-philips.webp"
+    }
 
 ]
