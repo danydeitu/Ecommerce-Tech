@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
 
+const categoryMap = {
+  1:'Notebooks',
+  2:'PC',
+  3:'Impresoras',
+  4: 'Monitores',
+};
+function CategoryName({categoryId}) {
+  return categoryMap[categoryId] 
+};
 const Categorias = () => {
     return (
         <li className="nav-item dropdown">

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const ItemCount = ({valInicial, stock}) => {
+export const ItemCount = ({valInicial, stock,onAdd}) => {
     
     const [contador, setContador] = useState(valInicial)
             //Var       //Modificar var     //Estado inicial
