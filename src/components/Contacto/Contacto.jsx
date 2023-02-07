@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom"
 
-const Contacto = () => {
+export const Contacto = () => {
     const datosFormulario = React.useRef()//referencia
     let navigate =useNavigate() //ubicacion actual
     const consultarFormulario = (e) => {
@@ -39,4 +39,3 @@ navigate("/") //redi a home
 </div>
   )
 }
-export default Contacto;

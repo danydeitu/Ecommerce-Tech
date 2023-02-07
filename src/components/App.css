@@ -14,6 +14,7 @@ background-color: rgb(204, 210, 219);
     text-align: center;
 }
 
+
 img {
     margin-top: 3px;
 }
@@ -35,4 +36,10 @@ img {
     text-align: center;
  justify-content: center;
 
+}
+
+.cardBodyDark {
+    background-color: black;
+    margin-bottom: 3px;
+    text-align: center;
 }
