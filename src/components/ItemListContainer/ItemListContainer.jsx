@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 
 import { ItemList } from '../ItemList/ItemList'
 //context
-import { DarkModeContext, useDarkModeContext } from '../../context/DarkModeContext'
+import {useDarkModeContext } from '../../context/DarkModeContext'
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const {idCategoria}= useParams()

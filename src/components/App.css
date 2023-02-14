@@ -1,7 +1,6 @@
-body{
-background-color: rgb(204, 210, 219);
+body {
+background-color: rgb(233, 249, 249);
 }
-
 .cardProducto {
     width: 18rem;
     margin: 4px;
@@ -14,6 +13,11 @@ background-color: rgb(204, 210, 219);
     text-align: center;
 }
 
+.cardBodyDark {
+    background-color: hsl(0, 0, 33%);
+    margin-bottom: 3px;
+    text-align: center;
+}
 
 img {
     margin-top: 3px;
@@ -30,16 +34,36 @@ img {
     margin-top: 20px;
 }
 
-.container{
-    display:block;
-    width: 50%;
-    text-align: center;
- justify-content: center;
-
+.itemDetailBodyDark {
+    background-color: hsl(0, 0, 33%);
+    color:white;
 }
 
-.cardBodyDark {
+.darkMode {
     background-color: black;
-    margin-bottom: 3px;
-    text-align: center;
+    color: gainsboro;
+}
+
+.cartContainer {
+    display:block;
+    margin-top: 3%;
+    margin-left: 26,5%;
+}
+
+.divButtons button {
+    margin:4px;
+}
+
+.cardCart {
+
+    max-width: 300px;
+    margin:
+    20px;
+
+}
+.cardProductos {
+  
+    align-content: center;
+
+
 }

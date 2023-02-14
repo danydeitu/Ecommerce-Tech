@@ -1,4 +1,5 @@
-import { BrowserRouter as Router,Route, Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom";
 
 const categoryMap = {
   1:'Notebooks',
@@ -9,7 +10,7 @@ const categoryMap = {
 function nombreCategoria ({idCategoria}) {
   return categoryMap[idCategoria] 
 };
-const Categorias = () => {
+const Categorias = React.memo( () => {
 nombreCategoria = categoryMap
     return (
         <li className="nav-item dropdown">
@@ -24,6 +25,6 @@ nombreCategoria = categoryMap
           </ul>
         </li>
     );
-}
+})
 
 export default Categorias;

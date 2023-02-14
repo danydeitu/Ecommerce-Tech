@@ -15,7 +15,7 @@ navigate("/") //redi a home
 
     }
   return (
-    <div className="container" style={{marginTop:"20px"}}>
+    <div className="container" style={{marginTop:"30px" ,padding:"10px" ,width:"50%"}}>
     <form onSubmit={consultarFormulario} ref={datosFormulario}>
     <div className="mb-3">
         <label htmlFor="nombre" className="form-label">Nombre y apellido</label>
