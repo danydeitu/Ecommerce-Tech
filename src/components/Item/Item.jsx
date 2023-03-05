@@ -1,17 +1,24 @@
-import { Link } from "react-router-dom"
-import { useDarkModeContext } from "../../context/DarkModeContext"
-export const Item = ({item}) => {
-  const {darkMode} = useDarkModeContext()
-  return (
-    <div className="card mb-3 cardProducto border-light">
-        <img src={`../img/${item.img}`} className="card-img-top" alt={`Imagen de ${item.nombre}`} />
-            <div className="card-body cardBody">
-                <h5 className="card-title">{item.nombre} {item.modelo}</h5>
-                <p className="card-text">{item.marca}</p>
-                <p className="card-text">$ {new Intl.NumberFormat('de-DE').format(item.precio)}</p>
-                <button className="btn btn-dark"><Link className="nav-link" to={`/item/${item.id}`}>Ver Producto</Link></button>
-            </div>
-      </div>
+import { useCarritoContext } from "../../context/CarritoContext"
 
+export const ItemCart = ({ item }) => {
+  const { removeItem } = useCarritoContext()
+
+  return (
+    <div className="card mb-3 cardCart">
+      <div className="row g-0">
+        <div className="col-md-4">
+          <img src={item.img} alt={`Imagen de producto ${item.nombre}`} className="img-fluid rounded-start" />
+        </div>
+        <div className="col-md-8">
+          <div className="card-body">
+            <h5 className="card-title">{item.nombre} {item.modelo}</h5>
+            <p className="card-text">Cantidad: {item.cant}</p>
+            <p className="card-text">Precio Unitario: $ {new Intl.NumberFormat('de-DE').format(item.precio)}</p>
+            <p className="card-text">Subtotal: $ {new Intl.NumberFormat('de-DE').format(item.precio * item.cant)}</p>
+            <button className="btn btn-danger" onClick={() => removeItem(item.id)}>Eliminar del Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }

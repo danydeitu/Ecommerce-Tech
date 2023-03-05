@@ -1,9 +1,20 @@
-import React from 'react'
-import { useDarkModeContext } from '../../../context/DarkModeContext'
+import './botonDarkMode.css'
 
-export default function BotonDarkMode() {
+//Context
+import { useDarkModeContext } from '../../../context/DarkModeContext';
+
+export const BotonDarkMode = () => {
     const {toggleDarkMode} = useDarkModeContext()
-  return (
-    <div className='theme-switch'>BotonDarkMode</div>
-  )
+    return (
+           
+            <div className="theme-switch-wrapper">
+                <label className="theme-switch" htmlFor="checkbox">
+                    <input type="checkbox" id="checkbox" onInput={() => toggleDarkMode()} />
+                    <div className="slider round" />
+                </label>
+            </div>
+
+    );
 }
+
+
