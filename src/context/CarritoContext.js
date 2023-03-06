@@ -40,7 +40,7 @@ export const CarritoProvider = (props) => {
         setCarrito([])
     }
 
-    //Eliminar producto
+    //Eliminar prod
     const removeItem = (id) => {
         setCarrito(carrito.filter(prod => prod.id !== id))
     }
@@ -50,7 +50,7 @@ export const CarritoProvider = (props) => {
         return carrito.reduce((acum, prod) => acum += prod.cant, 0)
     }
 
-    //Precio total de la compra
+    //Precio total 
     const totalPrice = () => {
         return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio), 0)
     }

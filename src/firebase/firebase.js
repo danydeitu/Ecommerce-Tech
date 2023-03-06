@@ -2,13 +2,14 @@ import { initializeApp } from "firebase/app";
 import {getFirestore, collection, doc, addDoc, getDoc, getDocs, updateDoc, deleteDoc} from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-gyL-YiluGWZHHvUKezl68ywX_esxVHc",
-  authDomain: "dany-tech-c1ab3.firebaseapp.com",
-  projectId: "dany-tech-c1ab3",
-  storageBucket: "dany-tech-c1ab3.appspot.com",
-  messagingSenderId: "699786385604",
-  appId: "1:899093072049:web:3aad17fcec274561be3a90"
-};
+    apiKey: "AIzaSyC-gyL-YiluGWZHHvUKezl68ywX_esxVHc",
+    authDomain: "dany-tech-c1ab3.firebaseapp.com",
+    projectId: "dany-tech-c1ab3",
+    storageBucket: "dany-tech-c1ab3.appspot.com",
+    messagingSenderId: "699786385604",
+    appId: "1:699786385604:web:eb760464c896d322fe1191"
+  };
+  
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore() //Consultar la BDD

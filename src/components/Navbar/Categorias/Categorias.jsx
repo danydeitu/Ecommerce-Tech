@@ -7,10 +7,10 @@ const Categorias = React.memo(() => {
             <button className="btn btn-dark">Categorias</button> 
           </a>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" to={"/category/1"}>Notebooks</Link></li>
-            <li><Link className="dropdown-item" to={"/category/2"}>Pc</Link></li>
-            <li><Link className="dropdown-item" to={"/category/3"}>Impresoras</Link></li>
-            <li><Link className="dropdown-item" to={"/category/4"}>Monitores</Link></li>
+            <li><Link className="dropdown-item" to={"/category/1Notebooks"}>Notebooks</Link></li>
+            <li><Link className="dropdown-item" to={"/category/2Pc"}>Pc</Link></li>
+            <li><Link className="dropdown-item" to={"/category/3Impresoras"}>Impresoras</Link></li>
+            <li><Link className="dropdown-item" to={"/category/4Monitores"}>Monitores</Link></li>
           </ul>
         </li>
     );
