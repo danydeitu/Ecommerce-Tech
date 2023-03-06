@@ -15,6 +15,10 @@ export const BotonDarkMode = () => {
             </div>
 
     );
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9

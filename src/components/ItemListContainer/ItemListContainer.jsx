@@ -2,6 +2,7 @@ import {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 //Componentes
 import { ItemList } from '../ItemList/ItemList'
+<<<<<<< HEAD
 
 //Context
 import { useDarkModeContext } from '../../context/DarkModeContext'
@@ -9,6 +10,10 @@ import { useDarkModeContext } from '../../context/DarkModeContext'
 //Firebase
 import { getProductos } from '../../firebase/firebase'
 
+=======
+//context
+import {useDarkModeContext } from '../../context/DarkModeContext'
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const {idCategoria}= useParams()

@@ -2,6 +2,10 @@ import CartWidget from "../CartWidget/CartWidget";
 import Secciones from "./Secciones/Secciones";
 import Categorias from "./Categorias/Categorias";
 import { BotonDarkMode } from "./botonDarkMode/BotonDarkMode";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
