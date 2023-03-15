@@ -13,6 +13,7 @@ background-color: rgb(233, 249, 249);
     text-align: center;
 }
 
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9
 .cardProducto {
     width: 18rem;
     margin: 4px;
@@ -57,6 +58,9 @@ img {
 }
 
 .cartContainer {
+<<<<<<< HEAD
+=======
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9
     margin-top: 3%;
     margin-left: 26,5%;
 }
@@ -66,5 +70,9 @@ img {
 }
 
 .cardCart {
+<<<<<<< HEAD
     max-width: 640px;
+=======
+    max-width: 640px;
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9
 }

@@ -3,19 +3,19 @@ import { useNavigate } from "react-router-dom"
 
 export const Contacto = () => {
     const datosFormulario = React.useRef()//referencia
-    let navigate =useNavigate() //ubicacion actual
+    let navigate = useNavigate() //ubicacion actual
     const consultarFormulario = (e) => {
-e.preventDefault()
-console.log(datosFormulario.current); //consulta estado acual formulario
-const datForm = new FormData(datosFormulario.current)//genera objeto iterador de estos datos
-const contacto = Object.fromEntries(datForm)// transforma un obj literal
-console.log(contacto)
-e.target.reset();//resetea el formulario
-navigate("/") //redi a home
+        e.preventDefault()
+        console.log(datosFormulario.current); //consulta estado acual formulario
+        const datForm = new FormData(datosFormulario.current)//genera objeto iterador de estos datos
+        const contacto = Object.fromEntries(datForm)// transforma un obj literal
+        console.log(contacto)
+        e.target.reset();//resetea el formulario
+        navigate("/") //redi a home
 
     }
   return (
-    <div className="container" style={{marginTop:"30px" ,padding:"10px" ,width:"50%"}}>
+    <div className="container" style={{marginTop:"20px"}}>
     <form onSubmit={consultarFormulario} ref={datosFormulario}>
     <div className="mb-3">
         <label htmlFor="nombre" className="form-label">Nombre y apellido</label>
@@ -34,8 +34,8 @@ navigate("/") //redi a home
         <textarea className="form-control" name="consulta" rows={3} defaultValue={""} />
     </div>
 
-    <button type="submit" className="btn btn-primary">Enviar</button>
-    </form>
-</div>
-  )
+                <button type="submit" className="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    )
 }

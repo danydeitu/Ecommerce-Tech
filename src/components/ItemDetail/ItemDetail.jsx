@@ -1,17 +1,28 @@
 import {ItemCount} from '../ItemCount/ItemCount'
 //Context
 import { useDarkModeContext } from '../../context/DarkModeContext'
+<<<<<<< HEAD
+import { useCarritoContext } from '../../context/CarritoContext'
+
+export const ItemDetail = ({item}) => {
+  const {darkMode} = useDarkModeContext()
+  const {addItem} = useCarritoContext()
+
+  const onAdd = (cantidad) => { //Agregar el producto al carrito
+    addItem(item,cantidad)
+=======
 export const ItemDetail = ({item}) => {
   const {darkMode} = useDarkModeContext()
   const onAdd = (cantidad) => { //Agregar el producto al carrito
     console.log(cantidad)
     console.log(item)
+>>>>>>> 46af0d674be9098cd5321e71456156c516bf6eb9
   }
 
   return (
     <div className='row g-0'>
         <div className="col-md-4">
-            <img src={`../img/${item.img}`} className="img-fluid rounded-start" alt={`Imagen de ${item.nombre}`} />
+            <img src={item.img} className="img-fluid rounded-start" alt={`Imagen de ${item.nombre}`} />
         </div>
         <div className="col-md-8">
             <div className='card-body' >
