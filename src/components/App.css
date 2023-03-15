@@ -13,6 +13,18 @@ background-color: rgb(233, 249, 249);
     text-align: center;
 }
 
+.cardProducto {
+    width: 18rem;
+    margin: 4px;
+    background-color: hsl(0, 0%, 97%);
+}
+
+.cardBody {
+    background-color: white;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
 .cardBodyDark {
     background-color: hsl(0, 0, 33%);
     margin-bottom: 3px;
@@ -45,7 +57,6 @@ img {
 }
 
 .cartContainer {
-    display:block;
     margin-top: 3%;
     margin-left: 26,5%;
 }
@@ -55,15 +66,5 @@ img {
 }
 
 .cardCart {
-
-    max-width: 300px;
-    margin:
-    20px;
-
-}
-.cardProductos {
-  
-    align-content: center;
-
-
+    max-width: 640px;
 }

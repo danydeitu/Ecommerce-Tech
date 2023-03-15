@@ -1,6 +1,3 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
 import { initializeApp } from "firebase/app";
 import {getFirestore, collection,addDoc} from 'firebase/firestore'
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -17,6 +14,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getFirestore()
   /*CRUD PRODUCTOS
     CREATE
     READ
@@ -24,17 +22,17 @@ const app = initializeApp(firebaseConfig);
     DELETE*/
 
     export const cargarBDD = async () => {
-        const promise = await fetch('./json/productos.json')
-        const productos = await promise.json()
-        productos.forEach( async (prod) => {
-            await addDoc(collection(db,"productos"), {
-                nombre: prod.nombre,
-                marca: prod.marca,
-                modelo: prod.modelo,
-                idCategoria: prod.idCategoria,
-                stock: prod.stock,
-                precio: prod.precio,
-                img: prod.img
-            })
-        })
-    }
+      const promise = await fetch('./json/productos.json')
+      const productos = await promise.json()
+      productos.forEach( async (prod) => {
+          await addDoc(collection(db,"productos"), {
+              nombre: prod.nombre,
+              marca: prod.marca,
+              modelo: prod.modelo,
+              idCategoria: prod.idCategoria,
+              stock: prod.stock,
+              precio: prod.precio,
+              img: prod.img
+          })
+      })
+  }
