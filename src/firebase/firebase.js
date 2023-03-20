@@ -22,6 +22,14 @@ const db = getFirestore() //Consultar la BDD
     DELETE
 */
 
+
+
+
+
+
+
+
+
 export const cargarBDD = async () => {
     const promise = await fetch('./json/productos.json')
     const productos = await promise.json()
