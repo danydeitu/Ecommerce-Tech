@@ -1,6 +1,7 @@
 import {ItemCount} from '../ItemCount/ItemCount'
 //Context
 import { useDarkModeContext } from '../../context/DarkModeContext'
+<<<<<<< HEAD
 import { useCarritoContext } from '../../context/CarritoContext'
 
 export const ItemDetail = ({item}) => {
@@ -9,6 +10,13 @@ export const ItemDetail = ({item}) => {
 
   const onAdd = (cantidad) => { //Agregar el producto al carrito
     addItem(item,cantidad)
+=======
+export const ItemDetail = ({item}) => {
+  const {darkMode} = useDarkModeContext()
+  const onAdd = (cantidad) => { //Agregar el producto al carrito
+    console.log(cantidad)
+    console.log(item)
+>>>>>>> 1829a248d1de6090f0989352a6dc4a55923a90a4
   }
 
   return (

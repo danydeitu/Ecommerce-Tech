@@ -2,7 +2,6 @@ import CartWidget from "../CartWidget/CartWidget";
 import Secciones from "./Secciones/Secciones";
 import Categorias from "./Categorias/Categorias";
 import { BotonDarkMode } from "./botonDarkMode/BotonDarkMode";
-
 const Navbar = () => {
     return (
         

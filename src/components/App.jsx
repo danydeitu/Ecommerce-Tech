@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //Toastify
 import { ToastContainer } from 'react-toastify';
 
+import { cargarBDD } from '../firebase/firebase';
+
 //Componentes
 import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
@@ -16,10 +18,11 @@ import { Cart } from './Cart/Cart';
 import { Checkout } from './Checkout/Checkout';
 //Context
 import { DarkModeProvider } from '../context/DarkModeContext';
-import { CarritoProvider } from '../context/CarritoContext';
+
 const App = () => {
- 
-    return (
+
+  //cargarBDD()
+  return (
     <>
 
     <BrowserRouter>
