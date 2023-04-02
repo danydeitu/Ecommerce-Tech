@@ -55,14 +55,14 @@
         "modelo": "SF-400",
         "precio": 6500,
         "stock": 10,
-        "img": "https://firebasestorage.googleapis.com/v0/b/dany-tech-c1ab3.appspot.com/o/Medidores-over.webp?alt=media&token=1f0bb590-058e-4147-b986-6a8d3034b1a8"
+        "img": "https://firebasestorage.googleapis.com/v0/b/dany-tech-c1ab3.appspot.com/o/balanza.webp?alt=media&token=b67e1340-71fb-4152-91d9-c377939acb07"
     },
     {
         "id": 7,
         "idCategoria": 2,
         "nombre": "Medidores",
         "marca": "Soplete Flame",
-        "modelo": "un 915",
+        "modelo": "UN 915",
         "precio": 8200,
         "stock": 10,
         "img": "https://firebasestorage.googleapis.com/v0/b/dany-tech-c1ab3.appspot.com/o/soplete.webp?alt=media&token=56295b72-0bea-4152-934d-5289b4ce754c"},

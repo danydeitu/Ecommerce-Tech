@@ -16,8 +16,3 @@ export const BotonDarkMode = () => {
 
     );
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 1829a248d1de6090f0989352a6dc4a55923a90a4
