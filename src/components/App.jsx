@@ -18,6 +18,7 @@ import { Cart } from './Cart/Cart';
 //Context
 import { DarkModeProvider } from '../context/DarkModeContext';
 import { Checkout } from './Checkout/Checkout';
+import { CarritoProvider } from '../context/CarritoContext';
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
     <>
 
     <BrowserRouter>
+    <CarritoProvider>
       <DarkModeProvider>
         <Navbar/>
           <Routes>
@@ -34,10 +36,11 @@ const App = () => {
             <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
             <Route path='/contacto' element={<Contacto/>}/> 
             <Route path='/cart' element={<Cart/>}/>
-            <Route path='/cart/Checkout' element={<Checkout/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
           </Routes> 
           <ToastContainer/>
       </DarkModeProvider>
+      </CarritoProvider>
     </BrowserRouter>
       
     </>
