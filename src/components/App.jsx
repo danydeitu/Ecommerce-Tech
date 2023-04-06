@@ -15,6 +15,7 @@ import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
 import { Contacto } from './Contacto/Contacto';
 import { Cart } from './Cart/Cart';
+import Footer  from './footer/Footer';
 //Context
 import { DarkModeProvider } from '../context/DarkModeContext';
 import { Checkout } from './Checkout/Checkout';
@@ -38,6 +39,7 @@ const App = () => {
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/checkout' element={<Checkout/>}/>
           </Routes> 
+          <Footer/>
           <ToastContainer/>
       </DarkModeProvider>
       </CarritoProvider>
