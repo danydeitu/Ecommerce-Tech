@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+# json lo toma de Firebase
+/public/json/Productos.json
 # testing
 /coverage
 
