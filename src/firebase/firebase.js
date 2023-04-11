@@ -30,7 +30,7 @@ const db = getFirestore() //Consultar la BDD
 
 
 
-export const cargarBDD = async () => {
+/*export const cargarBDD = async () => {
     const promise = await fetch('./json/productos.json')
     const productos = await promise.json()
     productos.forEach( async (prod) => {
@@ -44,7 +44,7 @@ export const cargarBDD = async () => {
             img: prod.img
         })
     })
-}
+}*/
 
 export const getProductos = async() => {
     const productos = await getDocs(collection(db,"productos"))
