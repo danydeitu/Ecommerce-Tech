@@ -4,6 +4,7 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify'
 import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from "../../firebase/firebase"
+import { useState } from 'react';
 
 export const Checkout = () => {
     const { carrito, emptyCart, totalPrice } = useCarritoContext()
@@ -34,6 +35,35 @@ export const Checkout = () => {
 
     }
 
+    
+
+  const [email, setEmail] = useState('');
+  const [emailConfirmacion, setEmailConfirmacion] = useState('');
+  const [error, setError] = useState(null);
+
+  function validarEmail() {
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regexEmail.test(email)) {
+      setError('Por favor ingrese una dirección de correo electrónico válida.');
+    } else if (email !== emailConfirmacion) {
+      setError('Los correos electrónicos no coinciden.');
+    } else {
+      setError(null);
+    }
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    validarEmail();
+    if (!error) {
+      // enviar formulario al servidor
+    }
+  }
+
+ 
+
+
+
 
     return (
         <>
@@ -52,11 +82,16 @@ export const Checkout = () => {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="email" className="form-control" name="email" />
+                            <input type="email" className="form-control" name="email"   value={email}
+          onChange={(e) => setEmail(e.target.value)} />
+                           
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="repEmail" className="form-label">Repetir Email</label>
-                            <input type="email" className="form-control" name="repEmail" />
+                            <label htmlFor="emailConfirmacion" className="emailConfirmacion">Repetir Email</label>
+                            <input type="email" className="form-control" name="emailConfirmacion" value={emailConfirmacion}
+          onChange={(e) => setEmailConfirmacion(e.target.value)}
+        />
+                      
                         </div>
                         <div className="mb-3">
                             <label htmlFor="celular" className="form-label">Numero telefonico</label>
@@ -66,7 +101,7 @@ export const Checkout = () => {
                             <label htmlFor="direccion" className="form-label">Direccion</label>
                             <input type="text" className="form-control" name="direccion" />
                         </div>
-
+                        {error && <div>{error}</div>}
                         <button type="submit" className="btn btn-primary">Finalizar Compra</button>
                     </form>
                 </div>
@@ -74,5 +109,4 @@ export const Checkout = () => {
 
         </>
 
-    )
-}
+    )}
