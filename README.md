@@ -12,6 +12,9 @@
 ## en el naveador de su pc
 (http://localhost:3000)
 
+## Pagina subida en servidor de Vercel
+(https://bazar-tech.vercel.app/)
+
 ## Dependencias 
 
 ## REACT.JS
