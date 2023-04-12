@@ -4,7 +4,7 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify'
 import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from "../../firebase/firebase"
-import React , { useState } from 'react';
+import { useState } from 'react';
 
 export const Checkout = () => {
     const { carrito, emptyCart, totalPrice } = useCarritoContext()

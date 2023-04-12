@@ -17,13 +17,13 @@
 
 ## Dependencias 
 
-## REACT.JS
+## REACT.JS "Libreria principal de codigo de desarrollo"
 
 [https://es.reactjs.org/docs/getting-started.html]
 
-### FIREBASE
+### FIREBASE "Base de datos noSQL"
 
 [https://firebase.google.com/docs?hl=es-419]
 
-### REACT-TOASTIFY
+### REACT-TOASTIFY "Notificaciones"
 [https://fkhadra.github.io/react-toastify/introduction/]
