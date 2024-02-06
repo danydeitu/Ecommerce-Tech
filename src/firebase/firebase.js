@@ -2,10 +2,10 @@ import { initializeApp } from "firebase/app";
 import {getFirestore, collection, doc, addDoc, getDoc, getDocs, updateDoc, deleteDoc} from 'firebase/firestore'
  // Importa getAuth
 import { getAuth } from 'firebase/auth';
-
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: 'process.env.API_KEY',
+    apiKey: "process.env.API_KEY",
     authDomain: "dany-tech-c1ab3.firebaseapp.com",
     projectId: "dany-tech-c1ab3",
     storageBucket: "dany-tech-c1ab3.appspot.com",
@@ -16,9 +16,10 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore() //Consultar la BDD
-const auth =getAuth(app);
+const auth = getAuth(app);
 
-export { db, auth };
+export { auth, db, createUserWithEmailAndPassword };
+
 
 /*
     CRUD PRODUCTOS

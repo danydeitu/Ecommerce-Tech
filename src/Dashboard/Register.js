@@ -1,46 +1,50 @@
 import React, { useState } from 'react';
-import { auth } from '../firebase/firebase';
+import { auth, createUserWithEmailAndPassword } from '../firebase/firebase';
+import { toast } from 'react-toastify';
 
 function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [nombre, setNombre] = useState('');
+  const [telefono, setTelefono] = useState('');
 
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const userCredential = await auth.createUserWithEmailAndPassword(email, password);
-
-      // Agrega el nombre y el teléfono al perfil del usuario
-      await userCredential.user.updateProfile({
-        displayName: name,
-        phoneNumber: phone
-      });
-
-      // Obtén los datos actualizados del usuario
-      const user = auth.currentUser;
-      console.log('Usuario registrado:', user);
-
-      // Limpiar los campos después del registro
+      await createUserWithEmailAndPassword(auth, email, password);
+      
+      toast.success("Registro exitoso");
+    
       setEmail('');
       setPassword('');
-      setName('');
-      setPhone('');
+      setNombre('');
+      setTelefono('');
     } catch (error) {
       console.error(error.message);
+      toast.error("Error al registrar. Inténtalo de nuevo.");
     }
   };
 
   return (
-    <div>
-      <h2>Registro</h2>
+    <div className="container" style={{marginTop:"20px"}}>
       <form onSubmit={handleRegister}>
-        <input type="text" placeholder="Nombre" value={name} onChange={(e) => setName(e.target.value)} />
-        <input type="email" placeholder="Correo electrónico" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <input type="tel" placeholder="Teléfono" value={phone} onChange={(e) => setPhone(e.target.value)} />
-        <button type="submit">Registrarse</button>
+        <div className="mb-3">
+          <label htmlFor="nombre" className="form-label">Nombre y apellido</label>
+          <input type="text" className="form-control" name="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} required/>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label">Email</label>
+          <input type="email" className="form-control" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label">Contraseña</label>
+          <input type="password" className="form-control" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="telefono" className="form-label">Número de teléfono</label>
+          <input type="tel" className="form-control" name="telefono" value={telefono} onChange={(e) => setTelefono(e.target.value)} required/>
+        </div>
+        <button type="submit" className="btn btn-primary">Registrarse</button>
       </form>
     </div>
   );
