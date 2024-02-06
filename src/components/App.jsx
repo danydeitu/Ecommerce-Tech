@@ -20,6 +20,7 @@ import Footer  from './footer/Footer';
 import { DarkModeProvider } from '../context/DarkModeContext';
 import { Checkout } from './Checkout/Checkout';
 import { CarritoProvider } from '../context/CarritoContext';
+//Dashboard
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
     <CarritoProvider>
       <DarkModeProvider>
         <Navbar/>
+        
           <Routes>
             <Route path='/' element={<ItemListContainer/>}/> 
             <Route path='/item/:id' element={<ItemDetailContainer/>}/>
