@@ -9,6 +9,9 @@ const Secciones = React.memo(() => {
             <li className="nav-item">
                 <Link className="nav-link" to={"/contacto"}><button className="btn btn-dark">Contacto</button></Link>
             </li>
+            <li className="nav-item">
+                <Link className="nav-link" to={"/dashboard"}><button className="btn btn-dark">Panel de usuario</button></Link>
+            </li>
         </>
     );
 })

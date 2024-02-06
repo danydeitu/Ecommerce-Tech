@@ -1,19 +1,20 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from './Login';
-import Register from './Register';
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
-    return (
-        <div>
-            <h1>Welcome to the Dashboard</h1>
-            <Routes>
-                <Route path="/" element={<Navigate to="/login" />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-            </Routes>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Bienvenido Usuario</h1>
+      <p>Si ya es usuario</p>
+      <li className="nav-item">
+        <Link className="nav-link" to="/login"><button className="btn btn-dark">Inicia sesión</button></Link>
+      </li>
+      <p>O si aún no lo es</p>
+      <li className="nav-item">
+        <Link className="nav-link" to="/register"><button className="btn btn-dark">Registrarse</button></Link>
+      </li>
+    </div>
+  );
 }
 
 export default Dashboard;
